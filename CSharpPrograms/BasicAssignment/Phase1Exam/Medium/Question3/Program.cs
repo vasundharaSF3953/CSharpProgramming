@@ -14,7 +14,6 @@ class Program
             d=number1%10;
             number1=number1/10;
             r=r+d*10;
-
         }
         if(r==number1)
         {

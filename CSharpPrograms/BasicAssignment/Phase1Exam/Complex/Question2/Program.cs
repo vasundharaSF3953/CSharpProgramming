@@ -4,18 +4,27 @@ class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Enter the number of series:");
+        int number=1;
+        double data=1.0;
+        int num=1;
+
+        Console.Write("Enter the number of series:");
         int series=int.Parse(Console.ReadLine());
 
-        double number=1;
-        int data=1+2+2*2;
-        for(int i=2;i<series;i++)
+      
+
+        for(int i=1;i<=series;i++)
         {
-            
-          number=i!+2*i+1/number;
+          num=2*num;
+          for(int j=i; j<=i; j++)
+          {
+             number=number*i;
+            for(int k=i; k<=i; k++)
+            {
+               data+=(double)num/number;
+            }
+           }
         }
-        number=data/number/series!;
-       Console.WriteLine(number); 
-        
-    }
+        Console.WriteLine("Output is:" +Math.Round(data,4)); 
+      }
 }

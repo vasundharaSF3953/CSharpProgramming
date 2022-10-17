@@ -14,11 +14,12 @@ class Program
         Console.Write("Enter the number difference:");
         int difference=int.Parse(Console.ReadLine());
 
-        int sum=0;
-        for(int i=0;i<element;i++)
+        int sum=number;
+        for(int i=1;i<element;i++)
         {
-            Console.Write(number+" ");
+           
             number=number+difference;
+            Console.Write(number+" ");
             sum=sum+number;
         }
         Console.WriteLine(" ");

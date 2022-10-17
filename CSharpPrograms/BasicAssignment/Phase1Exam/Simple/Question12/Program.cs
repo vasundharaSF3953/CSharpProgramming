@@ -15,6 +15,7 @@ class Program
                sum=sum+i*i;
             }
         }
+        
         Console.WriteLine($"The sum of square od odd value range from 1 to {range} is: "+sum);
         
     }

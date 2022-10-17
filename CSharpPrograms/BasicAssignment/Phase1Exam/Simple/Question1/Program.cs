@@ -9,7 +9,7 @@ class Program
 
         double centimeter=data*2.54;
 
-        Console.WriteLine("The centimeter of the number is "+centimeter);
+        Console.WriteLine("The centimeter of the number is "+centimeter+"cm");
         
     }
 }

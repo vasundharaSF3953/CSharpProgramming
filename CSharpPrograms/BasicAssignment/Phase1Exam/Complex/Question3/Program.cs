@@ -4,10 +4,10 @@ class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Enter the first text:");
+        Console.Write("Enter the first text:");
         string text1=Console.ReadLine();
 
-        Console.WriteLine("Enter the second text:");
+        Console.Write("Enter the second text:");
         string text2=Console.ReadLine();
 
         int value=text1.Length;
@@ -22,7 +22,9 @@ class Program
                count=count+1;
             }
         }
-        if(count==value)
+        
+      }
+      if(count==value)
         {
             Console.WriteLine("Name one and two are Anagrams");
         }
@@ -30,6 +32,5 @@ class Program
         {
             Console.WriteLine("Name one and two are not Anagrams");
         }
-      }
     }
 }

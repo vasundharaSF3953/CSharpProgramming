@@ -17,8 +17,7 @@ class Program
             for(int j=0;j<matrix;j++)
             {
              Console.Write($"element- [{i}][{j}]=");
-              matrix1[i,j]= int.Parse(Console.ReadLine());
-                
+             matrix1[i,j]= int.Parse(Console.ReadLine());
             }
         }
 
@@ -27,9 +26,8 @@ class Program
         {
             for(int j=0;j<matrix;j++)
             {
-             Console.Write($"element- [{i}][{j}]=");
-              matrix2[i,j]= int.Parse(Console.ReadLine());
-                
+            Console.Write($"element- [{i}][{j}]=");
+            matrix2[i,j]= int.Parse(Console.ReadLine());
             }
         }
 
@@ -48,7 +46,7 @@ class Program
             Console.WriteLine("");
             for(int j=0;j<matrix;j++)
             {
-                Console.Write(add[i,j]+" ");
+              Console.Write(add[i,j]+" ");
             }
         }
 

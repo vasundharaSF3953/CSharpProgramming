@@ -8,7 +8,7 @@ namespace Question5;
         string  data=Console.ReadLine();
         
         int value=data.Length;
-        Console.WriteLine(value);
+       // Console.WriteLine(value);
 
         char[] array=data.ToCharArray();
 

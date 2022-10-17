@@ -14,7 +14,7 @@ class Program
              Console.WriteLine("Enter the number of days leave taken:");
              int leave=int.Parse(Console.ReadLine());
 
-             int days=30-leave;
+             int days=31-leave;
              int salary=days*500; 
              Console.WriteLine("The salary of the person is:"+salary);
              break;  
@@ -24,7 +24,7 @@ class Program
              Console.WriteLine("Enter the number of days leave taken:");
              int leave=int.Parse(Console.ReadLine());
 
-             int days=29-leave;
+             int days=28-leave;
              int salary=days*500; 
              Console.WriteLine("The salary of the person is:"+salary);
              break;  
@@ -34,7 +34,7 @@ class Program
              Console.WriteLine("Enter the number of days leave taken:");
              int leave=int.Parse(Console.ReadLine());
 
-             int days=30-leave;
+             int days=31-leave;
              int salary=days*500; 
              Console.WriteLine("The salary of the person is:"+salary);
              break;  
@@ -44,7 +44,7 @@ class Program
              Console.WriteLine("Enter the number of days leave taken:");
              int leave=int.Parse(Console.ReadLine());
 
-             int days=31-leave;
+             int days=30-leave;
              int salary=days*500; 
              Console.WriteLine("The salary of the person is:"+salary);
              break;  
@@ -54,7 +54,7 @@ class Program
              Console.WriteLine("Enter the number of days leave taken:");
              int leave=int.Parse(Console.ReadLine());
 
-             int days=30-leave;
+             int days=31-leave;
              int salary=days*500; 
              Console.WriteLine("The salary of the person is:"+salary);
              break;  
@@ -64,7 +64,7 @@ class Program
              Console.WriteLine("Enter the number of days leave taken:");
              int leave=int.Parse(Console.ReadLine());
 
-             int days=31-leave;
+             int days=30-leave;
              int salary=days*500; 
              Console.WriteLine("The salary of the person is:"+salary);
              break;  
@@ -74,7 +74,7 @@ class Program
              Console.WriteLine("Enter the number of days leave taken:");
              int leave=int.Parse(Console.ReadLine());
 
-             int days=30-leave;
+             int days=31-leave;
              int salary=days*500; 
              Console.WriteLine("The salary of the person is:"+salary);
              break;  

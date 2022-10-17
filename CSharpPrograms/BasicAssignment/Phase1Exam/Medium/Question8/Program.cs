@@ -6,21 +6,22 @@ class Program
     {
         Console.Write("Enter any string:");
         string data=Console.ReadLine();
+        char[] data2=data.ToCharArray();
         
-        int value=data.Length;
-
+        int value=data2.Length;
+        int number=0;
         
-        char data2=' ';
+        
         for(int i=0;i<value;i++)
         {
-            if(data[i]>='1' || data[i]<='9')
+            if(data2[i]>='0' && data2[i]<='9')
             {
-                data2=data[i];
+                number=number*10+data2[i]-'0';
             }
         }
-        if(data2%2==0)
+        if(number%2==0)
         {
-           Console.WriteLine(data2+" is even number"); 
+           Console.WriteLine($"{number} is even number"); 
         }
     }
 }

@@ -7,17 +7,15 @@ class Program{
         string text=Console.ReadLine();
         
         int value=text.Length;
-        // string data1="";
+        string data1="";
 
-        for( int i=0; i<=value-2;i++)
+        for( int i=0; i<value;i++)
         {
-            for(int j=1;j<value;j++)
+            if(!data1.Contains(text[i] + ""))
             {
-                if(text[i]==text[j])
-                {
-                  
-                }
+                data1+=text[i];
             }
         }
+        Console.WriteLine("After removing the duplicate charactes from the said string is: "+data1);
     }
 }

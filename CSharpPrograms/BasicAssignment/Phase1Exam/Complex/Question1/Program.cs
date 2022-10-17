@@ -47,17 +47,28 @@ class Program
 
           for(int i=0;i<row1;i++)
           {
-            for(int j=0;j<=row1;j++)
+
+            for(int j=0;j<row1;j++)
             {
-                for(int k=0;k<=i;k++)
+                matrix3[i,j]=0;
+                for(int k=0;k<column1;k++)
                 {
-                    matrix3[i,j]=matrix1[i,j]*matrix2[j,k];
+                    matrix3[i,j]+=matrix1[i,k]*matrix2[k,j];
                 }
-                
             }
           }
 
 
+
+        Console.WriteLine("The multiplication of two matrix is ");
+        for(int i=0;i<row1;i++)
+        {
+            Console.WriteLine();
+            for(int j=0;j<column2;j++)
+            {
+               Console.Write(matrix3[i,j]+ " "); 
+            }
+        }
          
     }
 }

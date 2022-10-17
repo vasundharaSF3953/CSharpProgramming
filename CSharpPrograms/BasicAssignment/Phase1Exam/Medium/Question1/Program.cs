@@ -13,7 +13,7 @@ class Program
             int yearSalary=12*monthlySalary-6/100-1/100;
             Console.WriteLine("Annual salary "+yearSalary);
         }
-        else if(salary<=20000)
+        else if(salary>10000 && salary<=20000)
         {
             int monthlySalary=salary+20/100+80/100;
             int yearSalary=12*monthlySalary-6/100-1/100;

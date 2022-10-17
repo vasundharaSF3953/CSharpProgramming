@@ -4,31 +4,41 @@ class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Enter the lower limit:");
+        Console.Write("Enter the lower limit:");
         int lower=int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Enter the upper limit:");
+        Console.Write("Enter the upper limit:");
         int upper=int.Parse(Console.ReadLine());
 
 
        
-        
+        int temp, number,value;
 
         for(int i=lower;i<=upper;i++)
         {
-            int data=i;
-            int value=i;
-            int rem=0,temp;
-            while(value>0)
+          number =0;
+          temp=i;
+          while(temp>0)
+          {
+            value=temp%10;
+            if(i<10)
             {
-                temp=i%10;
-                rem=temp*temp*temp+rem;
-                value=value/10;
-           }
-            if(rem==data)
-            {
-                Console.Write(rem+",");
+                number+=value;
             }
+            else if(i<100)
+            {
+                number+=value*value;
+            }
+            else
+            {
+                number+=value*value*value;
+            }
+            temp/=10;
+          }
+          if(i ==number)
+          {
+             Console.Write(i+ " ");
+          }
 
         }
         

@@ -8,7 +8,7 @@ class Program
         int number=int.Parse(Console.ReadLine());
         
 
-        if(number<100)
+        if(number>=0&&number<100)
         {
             Console.WriteLine("Less than 100");
         }
